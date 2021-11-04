@@ -1,0 +1,33 @@
+{% extends 'sort/base.html' %}
+
+{% block content %}
+<div class="div-2">
+    <div class="container">
+        <h1 class="text-center">Sorted Items</h1>
+            <table class='table table-striped table-hover table-dark'>
+                <tr>
+                    <th> Numeric </th>
+                    <th> AlphaNumeric </th>
+                    <th> Alphabet </th>
+                    <th> Delete </th>
+                </tr>
+
+                <tr>
+                    <td>{{number}}</td>
+                    <td>{{letterwithnum}}</td>
+                    <td>{{letter}}</td>
+                    <td><button class='btn btn-danger delete-btn'>Delete</button></td>
+                </tr>
+
+                <tr>
+                    <td>{{number}}</td>
+                    <td>{{letterwithnum}}</td>
+                    <td>{{letter}}</td>
+                    <td><button class='btn btn-danger delete-btn'>Delete</button></td>
+                </tr>
+
+            </table>
+    </div>
+</div>
+
+{% endblock content %}

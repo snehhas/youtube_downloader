@@ -1,0 +1,17 @@
+{%extends 'sort/base.html'%}
+
+{%block content%}
+<div class="div-1">
+    <div class="jumbotron d-flex align-items-center"></div>
+        <div class="container">
+            <form method="POST" id="itemform">
+                {% csrf_token %}
+                {{ form.as_p }}
+                Enter value:<input type="text" name="val">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+{%endblock content%}
+    
